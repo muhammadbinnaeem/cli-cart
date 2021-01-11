@@ -3,6 +3,9 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use App\Models\Product;
+use App\Models\Cart;
+use App\Models\CartItem;
 
 class AddItem extends Command
 {
@@ -65,7 +68,7 @@ class AddItem extends Command
             $this->error("Cart Item already exist.");
             return;
         }
-        
+
         // Add item into cart
         $cart_item = new CartItem;
         $cart_item->cart_id = $cart->id;

@@ -3,6 +3,9 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use App\Models\Product;
+use App\Models\Cart;
+use App\Models\CartItem;
 
 class Offer extends Command
 {
