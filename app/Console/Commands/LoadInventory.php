@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use App\Imports\InventoryImport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class LoadInventory extends Command
 {
